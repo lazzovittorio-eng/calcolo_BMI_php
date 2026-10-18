@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f3f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #212529;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #1e2124;
+}
+
+/* Card Form */
+.card {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #212529;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #495057;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #3b82f6;
+}
+
+.btn {
+    width: 100%;
+    background-color: #1e2126;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+/* Scheda Risultato BMI */
+.result-card {
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 2px solid;
+}
+
+/* Stile specifico per Normopeso (Verde) */
+.result-card.normopeso {
+    background-color: #eaf6ed;
+    border-color: #2e7d32;
+    color: #1b5e20;
+}
+
+/* Stile generico per altre categorie (opzionale) */
+.result-card.sottopeso {
+    background-color: #e3f2fd;
+    border-color: #1976d2;
+    color: #0d47a1;
+}
+
+.result-card.sovrappeso {
+    background-color: #fff8e1;
+    border-color: #f57f17;
+    color: #e65100;
+}
+
+.result-card.obesita {
+    background-color: #ffebee;
+    border-color: #c62828;
+    color: #b71c1c;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: #111827;
+}
+
+.user-details {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.bmi-value {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.bmi-status {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.back-link {
+    color: #374151;
+    font-size: 0.95rem;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #000000;
+}
